@@ -11,6 +11,8 @@
 		F13A668829E3CF9C003E356D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A668729E3CF9C003E356D /* WelcomeScreen.swift */; };
 		F13A668A29E3D855003E356D /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A668929E3D855003E356D /* OnBoardingScreen.swift */; };
 		F1777DB429ED2643001F0DF4 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB329ED2643001F0DF4 /* RegisterScreen.swift */; };
+		F1777DB629ED3E98001F0DF4 /* Register2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB529ED3E98001F0DF4 /* Register2.swift */; };
+		F1777DB829ED425E001F0DF4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB729ED425E001F0DF4 /* LoginScreen.swift */; };
 		F1E976EA29E2B015006A493E /* fitnesxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E976E929E2B015006A493E /* fitnesxApp.swift */; };
 		F1E976EC29E2B015006A493E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E976EB29E2B015006A493E /* ContentView.swift */; };
 		F1E976EE29E2B019006A493E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E976ED29E2B019006A493E /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		F13A668729E3CF9C003E356D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		F13A668929E3D855003E356D /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
 		F1777DB329ED2643001F0DF4 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		F1777DB529ED3E98001F0DF4 /* Register2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2.swift; sourceTree = "<group>"; };
+		F1777DB729ED425E001F0DF4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F1E976E629E2B015006A493E /* fitnesx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnesx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E976E929E2B015006A493E /* fitnesxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnesxApp.swift; sourceTree = "<group>"; };
 		F1E976EB29E2B015006A493E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				F1777DB329ED2643001F0DF4 /* RegisterScreen.swift */,
+				F1777DB529ED3E98001F0DF4 /* Register2.swift */,
+				F1777DB729ED425E001F0DF4 /* LoginScreen.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 				F1E976EA29E2B015006A493E /* fitnesxApp.swift in Sources */,
 				F13A668829E3CF9C003E356D /* WelcomeScreen.swift in Sources */,
 				F13A668529E3CE48003E356D /* extensions.swift in Sources */,
+				F1777DB829ED425E001F0DF4 /* LoginScreen.swift in Sources */,
+				F1777DB629ED3E98001F0DF4 /* Register2.swift in Sources */,
 				F13A668A29E3D855003E356D /* OnBoardingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
