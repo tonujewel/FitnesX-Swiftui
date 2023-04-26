@@ -27,7 +27,7 @@ struct WelcomeScreen: View {
                 }label: {
                     Text("Get started")
                         .bold()
-                        .frame(width: 300,height: 50)
+                        .frame(maxWidth: .infinity,minHeight: 50)
                         .foregroundColor(Color("white"))
                         .background(LinearGradient(gradient: Gradient(colors: [Color(hex:0xff9DCEFF),Color(hex:0xff92A3FD)]), startPoint: .leading, endPoint: .trailing))
                         .clipShape(Capsule())

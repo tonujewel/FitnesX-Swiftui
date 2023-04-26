@@ -14,6 +14,9 @@
 		F1777DB429ED2643001F0DF4 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB329ED2643001F0DF4 /* RegisterScreen.swift */; };
 		F1777DB629ED3E98001F0DF4 /* Register2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB529ED3E98001F0DF4 /* Register2.swift */; };
 		F1777DB829ED425E001F0DF4 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1777DB729ED425E001F0DF4 /* LoginScreen.swift */; };
+		F1CF476D29F8F749001DE848 /* NotificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF476C29F8F749001DE848 /* NotificationScreen.swift */; };
+		F1CF476F29F90201001DE848 /* NotificationItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF476E29F90201001DE848 /* NotificationItems.swift */; };
+		F1CF477129F923E2001DE848 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF477029F923E2001DE848 /* AppConstant.swift */; };
 		F1E1EE5F29EE5C6E004E1B48 /* DashboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E1EE5E29EE5C6E004E1B48 /* DashboardScreen.swift */; };
 		F1E976EA29E2B015006A493E /* fitnesxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E976E929E2B015006A493E /* fitnesxApp.swift */; };
 		F1E976EC29E2B015006A493E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E976EB29E2B015006A493E /* ContentView.swift */; };
@@ -29,6 +32,9 @@
 		F1777DB329ED2643001F0DF4 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
 		F1777DB529ED3E98001F0DF4 /* Register2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2.swift; sourceTree = "<group>"; };
 		F1777DB729ED425E001F0DF4 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F1CF476C29F8F749001DE848 /* NotificationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
+		F1CF476E29F90201001DE848 /* NotificationItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItems.swift; sourceTree = "<group>"; };
+		F1CF477029F923E2001DE848 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		F1E1EE5E29EE5C6E004E1B48 /* DashboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreen.swift; sourceTree = "<group>"; };
 		F1E976E629E2B015006A493E /* fitnesx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnesx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E976E929E2B015006A493E /* fitnesxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnesxApp.swift; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F13A668429E3CE48003E356D /* extensions.swift */,
+				F1CF477029F923E2001DE848 /* AppConstant.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -59,6 +66,7 @@
 		F13A668629E3CF53003E356D /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				F1CF476B29F8F72B001DE848 /* Notification */,
 				F1E1EE5D29EE5C54004E1B48 /* Dashboard */,
 				F1E1EE5C29EE5C22004E1B48 /* OnBoarding */,
 				F1E1EE5B29EE5C0F004E1B48 /* Welcome */,
@@ -67,12 +75,12 @@
 			path = screens;
 			sourceTree = "<group>";
 		};
-		F16AF6E429F7B0720028F2E9 /* View */ = {
+		F16AF6E429F7B0720028F2E9 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
 				F16AF6E529F7B0930028F2E9 /* CustomTabBar.swift */,
 			);
-			path = View;
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		F1777DB229ED2624001F0DF4 /* Auth */ = {
@@ -83,6 +91,15 @@
 				F1777DB729ED425E001F0DF4 /* LoginScreen.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		F1CF476B29F8F72B001DE848 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F1CF476C29F8F749001DE848 /* NotificationScreen.swift */,
+				F1CF476E29F90201001DE848 /* NotificationItems.swift */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		F1E1EE5B29EE5C0F004E1B48 /* Welcome */ = {
@@ -128,7 +145,7 @@
 		F1E976E829E2B015006A493E /* fitnesx */ = {
 			isa = PBXGroup;
 			children = (
-				F16AF6E429F7B0720028F2E9 /* View */,
+				F16AF6E429F7B0720028F2E9 /* CustomView */,
 				F13A668629E3CF53003E356D /* screens */,
 				F13A668329E3CE10003E356D /* utils */,
 				F1E976E929E2B015006A493E /* fitnesxApp.swift */,
@@ -217,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CF476D29F8F749001DE848 /* NotificationScreen.swift in Sources */,
 				F1777DB429ED2643001F0DF4 /* RegisterScreen.swift in Sources */,
 				F1E976EC29E2B015006A493E /* ContentView.swift in Sources */,
 				F1E976EA29E2B015006A493E /* fitnesxApp.swift in Sources */,
+				F1CF477129F923E2001DE848 /* AppConstant.swift in Sources */,
 				F13A668829E3CF9C003E356D /* WelcomeScreen.swift in Sources */,
 				F13A668529E3CE48003E356D /* extensions.swift in Sources */,
 				F1777DB829ED425E001F0DF4 /* LoginScreen.swift in Sources */,
@@ -227,6 +246,7 @@
 				F1777DB629ED3E98001F0DF4 /* Register2.swift in Sources */,
 				F13A668A29E3D855003E356D /* OnBoardingScreen.swift in Sources */,
 				F1E1EE5F29EE5C6E004E1B48 /* DashboardScreen.swift in Sources */,
+				F1CF476F29F90201001DE848 /* NotificationItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
