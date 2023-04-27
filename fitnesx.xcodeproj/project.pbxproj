@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F10CFE9029FA4B7200E06636 /* WorkoutTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CFE8F29FA4B7200E06636 /* WorkoutTracker.swift */; };
+		F10CFE9229FA50DE00E06636 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10CFE9129FA50DE00E06636 /* AppUtils.swift */; };
 		F13A668529E3CE48003E356D /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A668429E3CE48003E356D /* extensions.swift */; };
 		F13A668829E3CF9C003E356D /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A668729E3CF9C003E356D /* WelcomeScreen.swift */; };
 		F13A668A29E3D855003E356D /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A668929E3D855003E356D /* OnBoardingScreen.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F10CFE8F29FA4B7200E06636 /* WorkoutTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTracker.swift; sourceTree = "<group>"; };
+		F10CFE9129FA50DE00E06636 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		F13A668429E3CE48003E356D /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		F13A668729E3CF9C003E356D /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		F13A668929E3D855003E356D /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
@@ -54,25 +58,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F10CFE8E29FA4B0800E06636 /* WorkoutTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F10CFE8F29FA4B7200E06636 /* WorkoutTracker.swift */,
+			);
+			path = WorkoutTracker;
+			sourceTree = "<group>";
+		};
 		F13A668329E3CE10003E356D /* utils */ = {
 			isa = PBXGroup;
 			children = (
 				F13A668429E3CE48003E356D /* extensions.swift */,
 				F1CF477029F923E2001DE848 /* AppConstant.swift */,
+				F10CFE9129FA50DE00E06636 /* AppUtils.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
 		};
-		F13A668629E3CF53003E356D /* screens */ = {
+		F13A668629E3CF53003E356D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F10CFE8E29FA4B0800E06636 /* WorkoutTracker */,
 				F1CF476B29F8F72B001DE848 /* Notification */,
 				F1E1EE5D29EE5C54004E1B48 /* Dashboard */,
 				F1E1EE5C29EE5C22004E1B48 /* OnBoarding */,
 				F1E1EE5B29EE5C0F004E1B48 /* Welcome */,
 				F1777DB229ED2624001F0DF4 /* Auth */,
 			);
-			path = screens;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		F16AF6E429F7B0720028F2E9 /* CustomView */ = {
@@ -146,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				F16AF6E429F7B0720028F2E9 /* CustomView */,
-				F13A668629E3CF53003E356D /* screens */,
+				F13A668629E3CF53003E356D /* Screens */,
 				F13A668329E3CE10003E356D /* utils */,
 				F1E976E929E2B015006A493E /* fitnesxApp.swift */,
 				F1E976EB29E2B015006A493E /* ContentView.swift */,
@@ -234,12 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10CFE9229FA50DE00E06636 /* AppUtils.swift in Sources */,
 				F1CF476D29F8F749001DE848 /* NotificationScreen.swift in Sources */,
 				F1777DB429ED2643001F0DF4 /* RegisterScreen.swift in Sources */,
 				F1E976EC29E2B015006A493E /* ContentView.swift in Sources */,
 				F1E976EA29E2B015006A493E /* fitnesxApp.swift in Sources */,
 				F1CF477129F923E2001DE848 /* AppConstant.swift in Sources */,
 				F13A668829E3CF9C003E356D /* WelcomeScreen.swift in Sources */,
+				F10CFE9029FA4B7200E06636 /* WorkoutTracker.swift in Sources */,
 				F13A668529E3CE48003E356D /* extensions.swift in Sources */,
 				F1777DB829ED425E001F0DF4 /* LoginScreen.swift in Sources */,
 				F16AF6E629F7B0930028F2E9 /* CustomTabBar.swift in Sources */,

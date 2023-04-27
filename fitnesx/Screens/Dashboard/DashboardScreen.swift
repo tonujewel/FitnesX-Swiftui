@@ -63,33 +63,7 @@ struct DashboardScreen: View {
                 }
                 
             }
-            VStack{
-                HStack{
-                    Text("Today Target")
-                        .foregroundColor(.black)
-                    Spacer()
-                    
-                    VStack{
-                        Text("Check")
-                            .foregroundColor(.white)
-                            .padding(.leading,20)
-                            .padding(.trailing,20)
-                            .padding(.top,10)
-                            .padding(.bottom,10)
-                    }
-                    
-                    .background(LinearGradient(gradient: Gradient(colors: [Color(hex:0xff9DCEFF),Color(hex:0xff92A3FD)]), startPoint: .leading, endPoint: .trailing))
-                    .cornerRadius(25)
-                    .foregroundColor(.white)
-                    
-                }
-                .frame(maxWidth: .infinity)
-                .padding(20)
-                .background(Color(hex:0xFFF0F3FF))
-                .cornerRadius(25)
-                
-            }.padding(.trailing,20)
-                .padding(.leading,20)
+            CheckCard(title: "Today Target")
             
             VStack{ }.frame(height: 20)
             Text("Activity Status")
@@ -111,5 +85,39 @@ struct DashboardScreen: View {
 struct DashboardScreen_Previews: PreviewProvider {
     static var previews: some View {
         DashboardScreen()
+    }
+}
+
+struct CheckCard: View {
+    @State var title:String
+    var body: some View {
+        VStack{
+            HStack{
+                Text(title)
+                    .foregroundColor(.black)
+                Spacer()
+                
+                VStack{
+                    Text("Check")
+                        .foregroundColor(.white)
+                        .padding(.leading,20)
+                        .padding(.trailing,20)
+                        .padding(.top,10)
+                        .padding(.bottom,10)
+                }
+                
+                .background(LinearGradient(gradient: Gradient(colors: [Color(hex:0xff9DCEFF),Color(hex:0xff92A3FD)]), startPoint: .leading, endPoint: .trailing))
+                .cornerRadius(25)
+                .foregroundColor(.white)
+                
+            }
+            .frame(maxWidth: .infinity)
+            .padding(20)
+            .background(Color(hex:0xFFF0F3FF))
+            .cornerRadius(25)
+            
+        }
+        .padding(.trailing,20)
+        .padding(.leading,20)
     }
 }
